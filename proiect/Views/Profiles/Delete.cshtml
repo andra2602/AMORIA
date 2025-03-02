@@ -1,0 +1,11 @@
+﻿@model proiect.Models.Profile
+
+<h2>Confirmare ștergere profil</h2>
+
+<p>Sigur doriți să ștergeți profilul <strong>@Model.ProfileName</strong>?</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" name="ProfileId" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Șterge</button>
+    <a class="btn btn-secondary" asp-action="Index">Anulează</a>
+</form>

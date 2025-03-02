@@ -1,0 +1,48 @@
+﻿@model proiect.Models.Post
+<link rel="stylesheet" href="~/css/newpost.css" />
+
+<div class="container">
+    <h2 class="text-center mt-5">Creează o postare nouă</h2>
+
+    <div class="row">
+        <div class="col-6 offset-3">
+            <form enctype="multipart/form-data" asp-action="New" asp-controller="Posts" class="post-form">
+
+                <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+                <!-- Conținut postare -->
+                <div class="form-group">
+                    <label asp-for="PostContent" class="form-label">Conținut postare</label>
+                    <textarea asp-for="PostContent" class="form-control" rows="5" placeholder="Scrie conținutul postării..."></textarea>
+                    <span asp-validation-for="PostContent" class="text-danger"></span>
+                </div>
+
+                <!-- Imagine/Video (opțional) -->
+                <div class="form-group mt-4">
+                    <label asp-for="ImageVideoPath" class="form-label">Încarcă imaginea sau videoclipul</label>
+                    <input name="ImageVideoPath" class="form-control" type="file" />
+                </div>
+
+                <!-- Link videoclip embedded (opțional) -->
+                <div class="form-group mt-4">
+                    <label asp-for="EmbeddedVideoUrl" class="form-label">Link către videoclip embedded (YouTube, Vimeo, etc.)</label>
+                    <input asp-for="EmbeddedVideoUrl" class="form-control" type="url" placeholder="Ex: https://www.youtube.com/embed/ID_VIDEOCIP" />
+                    <span asp-validation-for="EmbeddedVideoUrl" class="text-danger"></span>
+                </div>
+
+                <!-- Data postării -->
+                <div class="form-group mt-4">
+                    <label asp-for="PostDate" class="form-label">Data postării</label>
+                    <input asp-for="PostDate" class="form-control" readonly />
+                    <span asp-validation-for="PostDate" class="text-danger"></span>
+                </div>
+
+                <!-- Butoane -->
+                <div class="text-center mt-4">
+                    <button class="btn profile-btn-primary" type="submit">Publică</button>
+                    <a class="btn profile-btn-secondary" asp-action="YourProfile" asp-controller="Profiles">Anulează</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

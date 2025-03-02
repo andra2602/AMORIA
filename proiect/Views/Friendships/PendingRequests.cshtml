@@ -1,0 +1,34 @@
+﻿@model IEnumerable<proiect.Models.Friendship>
+
+<link rel="stylesheet" href="~/css/site.css"/>
+<link rel="stylesheet" href="~/css/requests.css"/>
+
+<h2 class="title-dancing-script">Cererile primite</h2>
+
+@if (!Model.Any())
+{
+    <p class="text-center">Nu ai cereri de prietenie în așteptare.</p>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var request in Model)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>
+                    @request.User1.UserFirstName @request.User1.UserLastName dorește să fie prieten cu tine.
+                </span>
+                <span>
+                    <form asp-action="AcceptFriendRequest" method="post" class="d-inline">
+                        <input type="hidden" name="id" value="@request.FriendshipId" />
+                        <button type="submit" class="btn btn-success btn-sm">Acceptă</button>
+                    </form>
+                    <form asp-action="DeclineFriendRequest" method="post" class="d-inline">
+                        <input type="hidden" name="id" value="@request.FriendshipId" />
+                        <button type="submit" class="btn btn-danger btn-sm">Respinge</button>
+                    </form>
+                </span>
+            </li>
+        }
+    </ul>
+}

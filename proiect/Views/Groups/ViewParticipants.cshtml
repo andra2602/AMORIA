@@ -1,0 +1,55 @@
+﻿@model IEnumerable<dynamic>
+
+<link href="~/css/ViewParticipants.css" rel="stylesheet" />
+
+@if (TempData["success"] != null)
+
+{
+    <div class="alert alert-success">
+        @TempData["success"]
+    </div>
+}
+@if (TempData["error"] != null)
+
+{
+    <div class="alert alert-danger">
+        @TempData["error"]
+    </div>
+}
+
+<div class="participants-container">
+    <h2 class="text-center">Participanți grup: @ViewBag.GroupName</h2>
+
+    <table class="table table-striped participants-table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Moderator</th>
+                <th>Data alăturării</th>
+                <th>Acțiuni</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var participant in Model)
+            {
+                <tr>
+                    <td>@participant.UserName</td>
+                    <td>@participant.Email</td>
+                    <td>@(participant.IsModerator ? "Da" : "Nu")</td>
+                    <td>@participant.RegistrationDate.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <form method="post" asp-action="RemoveParticipant" class="action-form">
+                            <input type="hidden" name="groupId" value="@ViewBag.GroupId" />
+                            <input type="hidden" name="userId" value="@participant.Id" />
+                            <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a class="btn btn-secondary" asp-action="Show" asp-route-id="@ViewBag.GroupId">Înapoi la detalii grup</a>
+</div>
+ 

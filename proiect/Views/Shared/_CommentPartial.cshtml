@@ -1,0 +1,55 @@
+﻿@model proiect.Models.Comment
+
+<li class="list-group-item">
+    <div class="d-flex justify-content-between">
+        <div>
+            <strong>@Model.User.UserFirstName @Model.User.UserLastName:</strong>
+            @Model.CommentContent
+            <small class="text-muted d-block">Publicat la: @Model.CommentDate.ToString("dd/MM/yyyy HH:mm")</small>
+        </div>
+        <div>
+            <a asp-controller="Comments"
+               asp-action="EditCommentFromPost"
+               asp-route-id="@Model.CommentId"
+               class="btn btn-warning btn-sm me-2">
+                <i class="bi bi-pencil"></i> Editează
+            </a>
+
+            <form asp-controller="Comments"
+                  asp-action="DeleteCommentFromPost"
+                  asp-route-id="@Model.CommentId"
+                  method="post" style="display:inline;">
+                <button type="submit" class="btn btn-danger btn-sm"
+                        onclick="return confirm('Ești sigur că vrei să ștergi acest comentariu?');">
+                    <i class="bi bi-trash"></i> Șterge
+                </button>
+            </form>
+
+            <button class="btn btn-reply btn-sm" onclick="showReplyForm(@Model.CommentId)">Răspunde</button>
+        </div>
+    </div>
+
+    <!-- Formular pentru răspuns -->
+    <div id="reply-form-@Model.CommentId" class="reply-form mt-2" style="display:none;">
+        <form asp-controller="Comments" asp-action="New" method="post">
+            <input type="hidden" name="entityType" value="Post" />
+            <input type="hidden" name="entityId" value="@Model.PostId" />
+            <input type="hidden" name="parentCommentId" value="@Model.CommentId" />
+            <div class="mb-3">
+                <textarea name="CommentContent" class="form-control" rows="2" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success btn-sm">Trimite</button>
+        </form>
+    </div>
+
+    <!-- Afișează răspunsurile recursiv -->
+    @if (Model.Replies != null && Model.Replies.Any())
+    {
+        <ul class="list-group mt-2 ms-3">
+            @foreach (var reply in Model.Replies)
+            {
+                @Html.Partial("_CommentPartial", reply)
+            }
+        </ul>
+    }
+</li>

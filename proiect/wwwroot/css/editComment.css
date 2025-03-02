@@ -1,0 +1,79 @@
+﻿/* Container general pentru editare comentariu */
+.edit-comment-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #FFFFFF; /* Alb */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+}
+
+/* Titlu */
+h2 {
+    font-size: 2rem;
+    color: #333; /* Gri închis */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Etichetă și câmpuri */
+.form-label {
+    font-size: 1rem;
+    color: #555; /* Gri mediu */
+    font-weight: bold;
+}
+
+textarea.form-control {
+    background-color: #F5F5F5; /* Gri deschis */
+    color: #333; /* Gri închis */
+    border: 1px solid #DDD; /* Bordură discretă */
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    textarea.form-control:focus {
+        border-color: #64B5F6; /* Albastru deschis */
+        box-shadow: 0 0 10px rgba(100, 181, 246, 0.5); /* Efect de focus */
+    }
+
+/* Mesaje de validare */
+.text-danger {
+    font-size: 0.9rem;
+    color: #E57373; /* Roșu deschis */
+    margin-top: 5px;
+}
+
+/* Butoane */
+.btn-primary {
+    background-color: #E57373; /* Albastru deschis */
+    color: #FFFFFF;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-primary:hover {
+        background-color: #EF5350; /* Albastru intens */
+    }
+
+.btn-secondary {
+    background-color: #B0BEC5; /* Gri deschis */
+    color: #FFFFFF;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-secondary:hover {
+        background-color: #90A4AE; /* Gri intens */
+    }

@@ -1,0 +1,97 @@
+﻿/* Fundal general */
+body {
+    background: #FBF8EF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Text general */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container general */
+.container {
+    max-width: 800px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbra containerului */
+    margin-bottom: 300px;
+}
+
+/* Titlu */
+h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FFA07A; /* Linie subțire pentru evidențiere */
+    padding-bottom: 10px;
+}
+
+/* Card Postare */
+.post-card {
+    background-color: #FFF7EB; /* Fundal deschis */
+    border: 1px solid #E0E0E0; /* Linie subțire */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Umbra cardului */
+}
+
+/* Data postare */
+.post-date {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Imagini */
+.post-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Videoclip */
+.post-video iframe {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Butoane */
+.btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+}
+
+/* Buton Șterge */
+.profile-btn-danger {
+    background-color: #FF6B6B; /* Roșu pastel */
+    color: #FFFFFF;
+}
+
+    .profile-btn-danger:hover {
+        background-color: #FF3B3B; /* Roșu intens */
+        transform: scale(1.05); /* Efect de mărire */
+    }
+
+/* Buton Anulează */
+.profile-btn-secondary {
+    background-color: #B0BEC5; /* Gri pastel */
+    color: #FFFFFF;
+}
+
+    .profile-btn-secondary:hover {
+        background-color: #90A4AE; /* Gri mai intens */
+        transform: scale(1.05); /* Efect de mărire */
+    }

@@ -1,0 +1,88 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+/* Fundal alb pentru navbar */
+.navbar {
+    background-color: #ffffff; /* Alb curat */
+    border-bottom: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Stil pentru brand-ul "Amoria" */
+.navbar-brand {
+    font-family: 'Dancing Script', cursive; /* Font cursiv */
+    font-size: 2rem; /* Dimensiune mai mare */
+    color: #ff6f91; /* Roz intens */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+}
+
+    .navbar-brand:hover {
+        color: #ff4d6d; /* Roz mai închis la hover */
+        text-decoration: none;
+    }
+
+/* Stil pentru link-urile din navbar */
+.navbar-nav .nav-link {
+    font-size: 1.1rem; /* Dimensiune puțin mai mare */
+    font-family: 'Arial', sans-serif; /* Font simplu și lizibil */
+    color: #333; /* Gri închis pentru link-urile inactive */
+    margin: 0 10px;
+    font-weight: 500; /* Îngroșare text */
+    transition: background 0.3s ease, color 0.3s ease;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: currentColor;
+}
+
+    /* Efect hover: gradient pe text */
+    .navbar-nav .nav-link:hover {
+        background: linear-gradient(to right, #ff512f, #dd2476); /* Gradient pentru text */
+        -webkit-background-clip: text; /* Asigură gradient doar pe text */
+        color: transparent; /* Textul devine transparent pentru a afișa gradientul */
+        font-weight: 600; /* Îngroșare text la hover */
+        text-decoration: none; /* Fără subliniere */
+    }
+
+/* Butonul de căutare */
+.navbar .btn-outline-success {
+    background-color: #ffffff; /* Alb curat */
+    color: #ff4d6d; /* Roz intens */
+    border: 1px solid #ff4d6d; /* Margine roz */
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+    .navbar .btn-outline-success:hover {
+        color: #dd2476; /* Text roz gradient */
+        border-color: #dd2476; /* Schimbă marginea butonului la hover */
+    }
+
+.title-dancing-script {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #4a004e;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}

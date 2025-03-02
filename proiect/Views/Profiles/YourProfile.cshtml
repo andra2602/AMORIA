@@ -1,0 +1,100 @@
+﻿@model proiect.Models.ApplicationUser
+
+@{
+    ViewData["Title"] = "Profilul Meu";
+}
+
+@if (TempData["message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["message"]
+    </div>
+}
+
+<div class="container mt-5">
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <!-- Afișăm mesajul de eroare -->
+        <div class="alert alert-danger text-center" role="alert">
+            <h1>Eroare</h1>
+            <p>@ViewBag.ErrorMessage</p>
+            <a href="/Home/Index" class="btn profile-btn profile-btn-primary mt-3">Înapoi la pagina principală</a>
+        </div>
+    }
+    else
+    {
+        <!-- Afișăm informațiile profilului -->
+        <div class="profile-header text-center">
+            <h1>Profilul lui @Model.Profile.ProfileName.Split(' ')[0]</h1>
+            <div>
+                <img src="@Model.Profile.ImagePath" alt="Poza profil" class="profile-picture">
+            </div>
+            <a class="btn profile-btn profile-btn-warning mt-3" asp-controller="Profiles" asp-action="Edit" asp-route-id="@Model.Profile.Id">
+                <i class="bi bi-pencil"></i> Editează Profil
+            </a>
+        </div>
+
+        <div class="profile-info mt-4">
+            <p><strong>Descriere:</strong> @Model.Profile.Description</p>
+            <p><strong>Website:</strong> <a href="@Model.Profile.Website" target="_blank">@Model.Profile.Website</a></p>
+            <p><strong>Locație:</strong> @Model.Profile.Location</p>
+            <p><strong>Vizibilitate:</strong> @(Model.Profile.Visibility ? "Public" : "Privat")</p>
+            <a class="btn profile-btn profile-btn-primary mt-3" asp-action="Index" asp-controller="Friendships">Friends</a>
+        </div>
+
+        <h2 class="mt-5">Postările tale</h2>
+        <a class="btn profile-btn profile-btn-success mb-3" asp-controller="Posts" asp-action="New">
+            <i class="bi bi-plus-circle"></i> Adaugă Postare Nouă
+        </a>
+
+        @if (Model.Posts != null && Model.Posts.Any(p => p.GroupId == null))
+        {
+            <ul class="post-list">
+                @foreach (var post in Model.Posts.Where(p => p.GroupId == null))
+                {
+                    <li class="post-item mb-4">
+                        <h3 class="post-title">@post.PostContent</h3>
+                        <p class="post-date">Publicat la: @post.PostDate</p>
+
+                        <!-- Afișăm imaginea dacă există -->
+                        @if (!string.IsNullOrEmpty(@post.ImageVideoPath))
+                        {
+                            var fileExtension = System.IO.Path.GetExtension(@post.ImageVideoPath).ToLower();
+                            if (fileExtension == ".mp4" || fileExtension == ".mov")
+                            {
+                                <div class="media-container" style="margin-top: 20px;">
+                                    <video controls style="max-width:500px;">
+                                        <source src="@post.ImageVideoPath" type="video/mp4">
+                                        Browserul dvs. nu suportă redarea acestui videoclip.
+                                    </video>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="media-container" style="margin-top: 20px;">
+                                    <img src="@post.ImageVideoPath" alt="Imagine postare" style="max-width:500px;">
+                                </div>
+                            }
+                        }
+
+                        @if (!string.IsNullOrEmpty(post.EmbeddedVideoUrl))
+                        {
+                            <div class="post-video mt-3">
+                                <iframe width="100%" height="315" src="@post.EmbeddedVideoUrl" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        }
+
+                        <a asp-controller="Posts" asp-action="Show" asp-route-id="@post.PostId" class="btn profile-btn profile-btn-info btn-sm mt-2">
+                            <i class="bi bi-eye"></i> Accesează postare
+                        </a>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p class="text-muted">Nu ai postări încă.</p>
+        }
+
+    }
+</div>

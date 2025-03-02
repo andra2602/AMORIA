@@ -1,0 +1,137 @@
+﻿/* Fundal general */
+body {
+    background: #FBF8EF;
+    font-family: 'Arial', sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal */
+.container {
+    max-width: 800px;
+    background-color: #FFFFFF; /* Alb pentru contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 30px auto;
+    color: #333; /* Text închis pe fundal alb */
+}
+
+/* Header profil */
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .profile-header h1 {
+        font-size: 2rem;
+        color: #151515;
+    }
+
+.profile-picture {
+    max-width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+/* Informații profil */
+.profile-info {
+    background-color: #F8F8F8; /* Gri deschis */
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Butoane din pagina de profil */
+.profile-btn {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.profile-btn-primary {
+    background-color: #FFC96F;
+    color: #FFFFFF;
+}
+
+    .profile-btn-primary:hover {
+        background-color: #FFA62F;
+    }
+
+.profile-btn-warning {
+    background-color: #FFC96F;
+    color: #FFFFFF;
+}
+
+    .profile-btn-warning:hover {
+        background-color: #FFA62F;
+    }
+
+.profile-btn-success {
+    background-color: #FFC96F;
+    color: #FFFFFF;
+}
+
+    .profile-btn-success:hover {
+        background-color: #FFA62F;
+    }
+
+.profile-btn-info {
+    background-color: #FFC96F;
+    color: #FFFFFF;
+}
+
+    .profile-btn-info:hover {
+        background-color: #FFA62F;
+    }
+
+/* Secțiunea postări */
+.post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Elimină marginile implicite */
+}
+
+.post-item {
+    background-color: #F8F8F8; /* Gri deschis */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    /* Elimină linia dintre secțiuni */
+    .post-item:last-child {
+        margin-bottom: 0; /* Elimină marginea ultimului element */
+    }
+
+.post-title {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.post-date {
+    font-size: 0.9rem;
+    color: black;
+}
+
+/* Imagini postări */
+/* Centrare imagini și videoclipuri */
+.media-container {
+    text-align: center; /* Centrează conținutul */
+    margin: 20px auto; /* Spațiu deasupra și dedesubt */
+}
+
+    .media-container img,
+    .media-container video {
+        max-width: 50%; /* Lățimea maximă de 50% */
+        display: inline-block; /* Permite centrare pe orizontală */
+        border-radius: 8px; /* Colțuri rotunjite */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Umbră pentru efect vizual */
+    }

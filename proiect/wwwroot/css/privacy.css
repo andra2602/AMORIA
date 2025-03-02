@@ -1,0 +1,60 @@
+﻿/* Fundal general pentru pagina Privacy Policy */
+body {
+    background: #FBF8EF; /* Fundal de culoare crem */
+    font-family: 'Arial', sans-serif; /* Font standard */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Text de culoare închisă */
+    display: flex;
+    flex-direction: column; /* Asigură că elementele sunt aranjate vertical */
+    min-height: 100vh; /* Înălțimea completă a paginii */
+}
+
+/* Navbar fix sus */
+.navbar {
+    position: sticky; /* Sau fixed dacă vrei să fie fixat tot timpul */
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 10; /* Asigură că navbar-ul e deasupra altor elemente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Container principal */
+.privacy-container {
+    max-width: 800px;
+    background-color: #FFFFFF; /* Alb pentru container */
+    padding: 20px;
+    border-radius: 10px; /* Colțuri rotunjite */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Umbră subtilă */
+    color: #333; /* Text închis pe fundal alb */
+    margin: auto; /* Centrează containerul pe lățime și înălțime */
+    text-align: center;
+}
+
+
+    /* Stil pentru titlul "Privacy Policy" */
+    .privacy-container h1 {
+        font-family: 'Dancing Script', cursive; /* Font cursiv */
+        font-size: 2.5rem; /* Dimensiune titlu */
+        text-align: center; /* Aliniere la centru */
+        color: #000000; /* Culoare neagră */
+        margin-bottom: 20px;
+    }
+
+
+    /* Stil pentru paragrafe */
+    .privacy-container p {
+        font-family: 'Times New Roman', Times, serif; /* Font elegant */
+        font-size: 1.2rem; /* Dimensiune text */
+        line-height: 1.8; /* Spațiere între rânduri */
+        text-align: justify; /* Text justificat */
+        color: #333; /* Culoare text */
+    }
+
+    .privacy-container i {
+        color: #4a004e; /* Culoare roz intens */
+        font-size: 1.5rem; /* Dimensiune iconițe */
+        margin-right: 0 10px; /* Spațiu între iconiță și text */
+        vertical-align: middle; /* Aliniere verticală cu textul */
+    }

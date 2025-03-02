@@ -1,0 +1,127 @@
+﻿/* Fundal general pentru pagina Requests */
+body {
+    background: #FBF8EF; /* Fundal de culoare crem */
+    font-family: 'Arial', sans-serif; /* Font standard */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Text de culoare închisă */
+    display: flex;
+    flex-direction: column; /* Asigură că elementele sunt aranjate vertical */
+    min-height: 100vh; /* Înălțimea completă a paginii */
+}
+
+/* Navbar fix sus */
+.navbar {
+    position: sticky; /* Fixat în partea de sus */
+    top: 0;
+    width: 100%;
+    background: white; /* Fundal alb pentru navbar */
+    z-index: 10; /* Asigură că navbar-ul e deasupra altor elemente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+}
+
+/* Container principal pentru Requests */
+.requests-container {
+    max-width: 1000px;
+    background-color: #FFFFFF; /* Alb pentru container */
+    padding: 20px;
+    border-radius: 10px; /* Colțuri rotunjite */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Umbră subtilă */
+    margin: auto; /* Centrează containerul pe lățime și înălțime */
+    text-align: center;
+    margin-top: 30px; /* Spațiu față de navbar */
+}
+
+    /* Stil pentru titlul "Cererile primite" */
+.requests-container h2 {
+        font-family: 'Dancing Script', cursive; /* Font cursiv */
+        font-size: 3rem; /* Dimensiune mare */
+        color: #4a004e; /* Roz închis */
+        text-align: center; /* Aliniere la centru */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+        margin-bottom: 30px;
+    }
+
+
+/* Lista cererilor */
+.list-group {
+    max-width: 600px;
+    margin: 0 auto; /* Centrează lista */
+    padding: 0;
+    list-style: none;
+}
+
+/* Elemente individuale ale listei */
+.list-group-item {
+    background: #FFFFFF;
+    border-radius: 12px; /* Colțuri rotunjite */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #4a004e; /* Roz închis pentru text */
+}
+
+
+    /* Text cerere */
+    .list-group-item span:first-child {
+        flex-grow: 1; /* Extinde textul pentru a ocupa cât mai mult spațiu */
+        margin-right: 20px; /* Spațiu între text și butoane */
+        font-weight: 500;
+        font-family: 'Cormorant Garamond', serif; /* Font elegant */
+        white-space: normal; /* Permite textului să fie pe mai multe linii */
+        overflow: visible; /* Elimină trunchierea textului */
+        text-overflow: unset; /* Elimină "..." */
+        line-height: 1.5; /* Spațiu între linii */
+    }
+
+
+
+    /* Container pentru butoane */
+.list-group-item span:last-child {
+        display: flex; /* Aliniază butoanele orizontal */
+        gap: 10px; /* Spațiu între butoane */
+    }
+
+/* Butoanele Acceptă și Respinge */
+.btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius:8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Stil pentru butonul Acceptă */
+.btn-success {
+    background-color: #ffc6d9; /* Verde pentru Acceptă */
+    border: none;
+    color: #4a004e;
+}
+
+.btn-success:hover {
+        background-color: #ffaec2; /* Roz mai intens la hover */
+        color: #4a004e;
+}
+
+/* Stil pentru butonul Respinge */
+.btn-danger {
+    background-color: #d9534f; /* Roșu pentru Respinge */
+    border: none;
+    color: #fff;
+}
+
+.btn-danger:hover {
+        background-color: #c9302c; /* Roșu mai intens la hover */
+    }
+
+/* Mesajul de "fără cereri" */
+.text-center {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif; /* Font elegant */
+    font-size: 1.2rem;
+    color: #4a004e; /* Roz închis */
+}

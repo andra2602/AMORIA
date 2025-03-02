@@ -1,0 +1,46 @@
+﻿@model IEnumerable<proiect.Models.ApplicationUser>
+
+<link href="~/css/indexUser.css" rel="stylesheet" />
+
+<div class="users-container">
+    <h2 class="text-center">Lista utilizatorilor</h2>
+
+    @if (TempData["message"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["message"]
+        </div>
+    }
+
+    <form method="GET" asp-action="Search" class="mb-3 search-form">
+        <div class="input-group">
+            <input type="text" name="searchTerm" class="form-control" placeholder="Caută utilizatori..." />
+            <button class="btn btn-primary search-btn" type="submit">Caută</button>
+        </div>
+    </form>
+
+    <table class="table table-striped users-table">
+        <thead>
+            <tr>
+                <th>Nume complet</th>
+                <th>Email</th>
+                <th>Data înregistrării</th>
+                <th>Acțiuni</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.UserFirstName @user.UserLastName</td>
+                    <td>@user.Email</td>
+                    <td>@user.RegistrationDate.ToShortDateString()</td>
+                    <td>
+                        <a class="btn btn-info btn-sm" asp-action="Show" asp-route-id="@user.Id">Vezi profil</a>
+                        <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@user.Id">Șterge</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

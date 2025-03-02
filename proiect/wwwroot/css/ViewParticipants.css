@@ -1,0 +1,83 @@
+﻿/* Container general pentru participanți */
+.participants-container {
+    max-width: 1500px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+}
+
+/* Titlu principal */
+h2.text-center {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Tabel participanți */
+.participants-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    .participants-table thead {
+        background-color: #FFA62F;
+        color: #FFFFFF;
+    }
+
+    .participants-table th, .participants-table td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .participants-table tbody tr:nth-child(even) {
+        background-color: #F8F8F8;
+    }
+
+    .participants-table tbody tr:nth-child(odd) {
+        background-color: #FFFFFF;
+    }
+
+    .participants-table tbody tr:hover {
+        background-color: #FFF3E0;
+    }
+
+/* Formular acțiune */
+.action-form {
+    display: inline;
+}
+
+/* Buton Remove */
+.btn-danger {
+    background-color: #E57373;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-danger:hover {
+        background-color: #EF5350;
+    }
+
+/* Buton Înapoi */
+.btn-secondary {
+    background-color: #B0BEC5;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+    .btn-secondary:hover {
+        background-color: #78909C;
+    }

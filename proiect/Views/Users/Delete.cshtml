@@ -1,0 +1,15 @@
+﻿@model proiect.Models.ApplicationUser
+
+<div class="delete-user-container">
+    <h2 class="text-center">Confirmare ștergere</h2>
+
+    <p class="text-center">
+        Sigur doriți să ștergeți utilizatorul <strong>@Model.UserFirstName @Model.UserLastName</strong>?
+    </p>
+
+    <form asp-action="ConfirmDelete" method="post" class="text-center">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <button type="submit" class="btn btn-danger delete-btn-danger">Șterge</button>
+        <a class="btn btn-secondary delete-btn-secondary" asp-action="Index">Anulează</a>
+    </form>
+</div>

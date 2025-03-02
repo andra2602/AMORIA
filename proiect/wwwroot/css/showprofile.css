@@ -1,0 +1,141 @@
+﻿
+/* Fundal general */
+body {
+    background: #FBF8EF;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container general */
+.container {
+    max-width: 1000px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: none; /* Eliminăm umbrele */
+    margin: 30px auto;
+    flex: 1; /* Asigurăm că ocupă spațiul rămas */
+}
+
+/* Titlu */
+h2, h3 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Detalii profil */
+.profile-details p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.profile-details a {
+    color: #FFA62F;
+    text-decoration: none;
+}
+
+    .profile-details a:hover {
+        text-decoration: underline;
+    }
+
+/* Imagine profil */
+.profile-picture {
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Postări */
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-item {
+    background-color: #F8F8F8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post-date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Imagini postări */
+.post-image img {
+    max-width: 50%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Butoane */
+.profile-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.profile-btn-primary {
+    background-color: #FFA07A; /* Somon */
+}
+
+    .profile-btn-primary:hover {
+        background-color: #FF7F50; /* Somon intens */
+    }
+
+.profile-btn-secondary {
+    background-color: #B0BEC5; /* Gri deschis */
+}
+
+    .profile-btn-secondary:hover {
+        background-color: #90A4AE; /* Gri intens */
+    }
+
+/* Badge pentru vizibilitate */
+.badge-status {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #FFC96F; /* Galben pastel */
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    border-top: none; /* Eliminăm bordura de sus */
+    padding: 20px 0;
+    background-color: #FBF8EF; /* Consistent cu fundalul paginii */
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    box-shadow: none; /* Eliminăm umbrele */
+}

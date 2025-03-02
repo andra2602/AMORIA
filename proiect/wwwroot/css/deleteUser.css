@@ -1,0 +1,59 @@
+﻿/* Container general pentru confirmare ștergere */
+.delete-user-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #FFFFFF; /* Alb */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+    text-align: center;
+}
+
+/* Titlu */
+h2 {
+    font-size: 2rem;
+    color: #333; /* Gri închis */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Text de confirmare */
+p {
+    font-size: 1.2rem;
+    color: #555; /* Gri mediu */
+    margin-bottom: 20px;
+}
+
+/* Butoane */
+.delete-btn-danger {
+    background-color: #E57373; /* Roșu deschis */
+    color: #FFFFFF;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+    .delete-btn-danger:hover {
+        background-color: #EF5350; /* Roșu intens */
+    }
+
+.delete-btn-secondary {
+    background-color: #B0BEC5; /* Gri deschis */
+    color: #FFFFFF;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+    .delete-btn-secondary:hover {
+        background-color: #90A4AE; /* Gri intens */
+    }

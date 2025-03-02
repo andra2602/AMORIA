@@ -1,0 +1,38 @@
+﻿
+@model proiect.Models.Friendship
+<link rel="stylesheet" href="~/css/showfriendship.css" />
+
+<div class="container">
+    <h2 class="text-center">Detalii despre cererea de prietenie</h2>
+
+    <table class="table" style="width: 100%; margin-top: 20px; border-collapse: collapse;">
+        <tr style="background-color: #FFF7EB; border: 1px solid #E0E0E0;">
+            <th style="padding: 10px; text-align: left; font-weight: bold; color: #FF7F50;">Utilizator 1</th>
+            <td style="padding: 10px; color: #555;">@Model.User1.UserFirstName @Model.User1.UserLastName</td>
+        </tr>
+        <tr style="background-color: #FFF7EB; border: 1px solid #E0E0E0;">
+            <th style="padding: 10px; text-align: left; font-weight: bold; color: #FF7F50;">Utilizator 2</th>
+            <td style="padding: 10px; color: #555;">@Model.User2.UserFirstName @Model.User2.UserLastName</td>
+        </tr>
+        <tr style="background-color: #FFF7EB; border: 1px solid #E0E0E0;">
+            <th style="padding: 10px; text-align: left; font-weight: bold; color: #FF7F50;">Status</th>
+            <td style="padding: 10px; color: #555;">@Model.Status</td>
+        </tr>
+    </table>
+
+    @if (Model.Status == "pending")
+    {
+        <div class="text-center" style="margin-top: 20px;">
+            <form method="post" asp-action="AcceptFriendRequest" asp-route-id="@Model.FriendshipId" class="d-inline">
+                <button type="submit" class="btn profile-btn-primary" style="margin-right: 10px;">Acceptă cererea de prietenie</button>
+            </form>
+            <form method="post" asp-action="DeclineFriendRequest" asp-route-id="@Model.FriendshipId" class="d-inline">
+                <button type="submit" class="btn profile-btn-danger">Refuză cererea de prietenie</button>
+            </form>
+        </div>
+    }
+
+    <div class="text-center" style="margin-top: 20px;">
+        <a class="btn profile-btn-secondary" asp-action="Index">Înapoi la lista de prieteni</a>
+    </div>
+</div>

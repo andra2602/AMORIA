@@ -1,0 +1,230 @@
+﻿/* Fundal general */
+body {
+    background: #FBF8EF;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container pentru postare */
+.card {
+    max-width: 1100px;
+    background-color: #FFFFFF; /* Fundal alb pentru contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 30px auto; /* Centrare pe pagină */
+    margin-bottom: 100px;
+    color: #333; /* Text închis */
+}
+
+/* Titlu postare */
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #151515;
+    margin-bottom: 15px;
+    text-align: center; /* Centrare titlu */
+}
+
+/* Text postare */
+.card-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Data postare */
+.text-muted {
+    font-size: 0.9rem;
+    color: #666; /* Gri deschis */
+    margin-bottom: 20px;
+}
+
+/* Imagine postare */
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Videoclip embedded */
+.card iframe {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+/* Lista de comentarii */
+.list-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-group-item {
+    background-color: #F8F8F8; /* Gri deschis */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Formular comentarii */
+textarea.form-control {
+    background: #F8F8F8; /* Gri deschis */
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+    textarea.form-control:focus {
+        border-color: #FFC96F;
+        box-shadow: 0 0 10px rgba(255, 201, 111, 0.5);
+    }
+
+/* Butoane */
+button {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Centrare pe orizontală */
+.button-center {
+    display: flex;
+    justify-content: center; /* Centrează butonul pe orizontală */
+    margin-top: 20px; /* Spațiu față de conținutul de deasupra */
+}
+
+.btn-success {
+    background-color: #FFC96F;
+    color: #FFFFFF;
+}
+
+    .btn-success:hover {
+        background-color: #FFA62F;
+    }
+
+.btn-danger {
+    background-color: #FF6F61;
+    color: #FFFFFF;
+}
+
+    .btn-danger:hover {
+        background-color: #E55039;
+    }
+
+.btn-secondary {
+    background-color: #CCCCCC;
+    color: #333;
+}
+
+    .btn-secondary:hover {
+        background-color: #AAAAAA;
+    }
+
+/* Adăugare comentariu */
+h5 {
+    font-size: 1.5rem;
+    font-family: 'Dancing Script', cursive;
+    color: #151515;
+    margin-top: 20px;
+}
+
+    /* Centrare secțiune de comentarii */
+    h5.mt-4 {
+        text-align: center;
+    }
+
+h2 {
+    font-size: 4rem; /* Dimensiune mai mare */
+    font-family: 'Dancing Script', cursive; /* Font caligrafic */
+    margin-top: 10px;
+    color: black; /* Asigură-te că se potrivește cu fundalul */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Umbră pentru contrast */
+    text-align : center;
+}
+
+h4 {
+    font-size: 2.5rem; /* Dimensiune mai mare */
+    font-family: 'Arial', sans-serif; /* Font caligrafic */
+    margin-top: 10px;
+    color: black; /* Asigură-te că se potrivește cu fundalul */
+    text-align: center;
+}
+
+/* Container pentru imagine și videoclip */
+.media-container {
+    display: flex;
+    justify-content: center; /* Centrează pe orizontală */
+    align-items: center; /* Centrează pe verticală (dacă este cazul) */
+    margin-top: 20px; /* Spațiu față de conținutul de deasupra */
+}
+
+    /* Imagine stilizată */
+    .media-container img {
+        max-width: 100%; /* Imaginea să fie responsive */
+        border-radius: 8px; /* Colțuri rotunjite pentru un aspect mai modern */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Umbra imaginii */
+    }
+
+    /* Videoclip embedded */
+    .media-container iframe {
+        border-radius: 8px; /* Colțuri rotunjite pentru videoclip */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Umbra videoclipului */
+    }
+
+/* Stil personalizat pentru butonul de răspuns */
+.btn-reply {
+    background-color: #FF9C73; /* O culoare violet deschis */
+    color: white; /* Text alb */
+    border: none; /* Elimină bordura */
+    border-radius: 5px; /* Colțuri rotunjite */
+    padding: 5px 10px; /* Dimensiune buton */
+    cursor: pointer; /* Indică faptul că este clicabil */
+    transition: background-color 0.3s ease; /* Efect lin la hover */
+}
+
+    .btn-reply:hover {
+        background-color: #FF9C74;
+    }
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+
+    textarea.form-control {
+        font-size: 0.9rem;
+    }
+}
+
+/* Imagini postări */
+/* Centrare imagini și videoclipuri */
+.media-container {
+    text-align: center; /* Centrează conținutul */
+    margin: 20px auto; /* Spațiu deasupra și dedesubt */
+}
+
+    .media-container img,
+    .media-container video {
+        max-width: 50%; /* Lățimea maximă de 50% */
+        display: inline-block; /* Permite centrare pe orizontală */
+        border-radius: 8px; /* Colțuri rotunjite */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Umbră pentru efect vizual */
+    }
+

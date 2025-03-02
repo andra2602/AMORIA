@@ -1,0 +1,115 @@
+﻿/* Fundal general */
+body {
+    background: #FBF8EF; /* Crem */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container general */
+.groups-container {
+    max-width: 1000px;
+    background-color: #FFFFFF; /* Alb */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+    margin: 30px auto;
+}
+
+/* Titlu principal */
+h2 {
+    font-size: 2rem;
+    color: #333; /* Gri închis */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Card pentru informațiile grupului */
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #333; /* Gri închis */
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555; /* Gri mediu */
+    margin-bottom: 10px;
+}
+
+/* Butoane */
+.btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 5px;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-info {
+    background-color: #FFA62F; /* Galben-portocaliu */
+    color: #FFFFFF;
+}
+
+    .btn-info:hover {
+        background-color: #FF8C00; /* Portocaliu intens */
+    }
+
+.btn-danger {
+    background-color: #E57373; /* Roșu deschis */
+    color: #FFFFFF;
+}
+
+    .btn-danger:hover {
+        background-color: #EF5350; /* Roșu intens */
+    }
+
+.btn-success {
+    background-color: #66BB6A; /* Verde */
+    color: #FFFFFF;
+}
+
+    .btn-success:hover {
+        background-color: #388E3C; /* Verde intens */
+    }
+
+.btn-secondary {
+    background-color: #B0BEC5; /* Gri-albastru */
+    color: #FFFFFF;
+}
+
+    .btn-secondary:hover {
+        background-color: #78909C; /* Gri-albastru închis */
+    }
+
+/* Mesaj temporar */
+.alert {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #66BB6A; /* Verde pentru succes */
+    color: #FFFFFF;
+}

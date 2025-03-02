@@ -1,0 +1,239 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = proiect
+build_property.RootNamespace = proiect
+build_property.ProjectDir = E:\PROIECT FINAL C#\proiect\proiect\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\PROIECT FINAL C#\proiect\proiect
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Comments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Comments/EditCommentFromPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudHNcRWRpdENvbW1lbnRGcm9tUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Friendships/AddFriend.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc2hpcHNcQWRkRnJpZW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Friendships/DeleteFriend.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc2hpcHNcRGVsZXRlRnJpZW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Friendships/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc2hpcHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Friendships/PendingRequests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc2hpcHNcUGVuZGluZ1JlcXVlc3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Friendships/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc2hpcHNcU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Groups/ApproveJoinRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXEFwcHJvdmVKb2luUmVxdWVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Groups/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXENvbmZpcm1EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Groups/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Groups/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Groups/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXE5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Groups/PendingGroupRequests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXFBlbmRpbmdHcm91cFJlcXVlc3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Groups/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXFNob3cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Groups/ViewGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXFZpZXdHcm91cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Groups/ViewParticipants.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXFZpZXdQYXJ0aWNpcGFudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Posts/AddPostToGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcQWRkUG9zdFRvR3JvdXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Posts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Posts/DeleteGroupPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcRGVsZXRlR3JvdXBQb3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Posts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Posts/EditGroupPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcRWRpdEdyb3VwUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Posts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Posts/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Posts/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Posts/ShowGroupPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcU2hvd0dyb3VwUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Profiles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Profiles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Profiles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Profiles/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZXNcTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Profiles/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZXNcU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Profiles/YourProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZXNcWW91clByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Shared/_CommentPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db21tZW50UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Shared/_PendingRequestsCount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QZW5kaW5nUmVxdWVzdHNDb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Users/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTmV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Users/PrivateProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUHJpdmF0ZVByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Users/PublicProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUHVibGljUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Users/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/PROIECT FINAL C\#/proiect/proiect/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3hk7jprc12

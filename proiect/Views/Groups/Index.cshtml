@@ -1,0 +1,83 @@
+﻿@model IEnumerable<proiect.Models.Group>
+
+@if (TempData["success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>@TempData["success"]</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (TempData["error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>@TempData["error"]</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<link href="~/css/indexGroup.css" rel="stylesheet" />
+
+<div class="groups-container">
+    <h2 class="text-center">Grupurile disponibile</h2>
+
+    @if (TempData["message"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["message"]
+        </div>
+    }
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nume grup</th>
+                <th>Descriere</th>
+                <th>Data creării</th>
+                <th>Acțiuni</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var group in Model)
+            {
+                <tr>
+                    <td>@group.GroupName</td>
+                    <td>@group.GroupDescription</td>
+                    <td>@group.GroupDate.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <a class="btn btn-info btn-sm" asp-action="Show" asp-route-id="@group.GroupId">Vezi detalii</a>
+                        <a class="btn btn-secondary btn-sm" asp-action="ViewGroup" asp-route-id="@group.GroupId">Vezi grup</a>
+                        @if (User.IsInRole("Admin") || User.IsInRole("Moderator"))
+                        {
+                            <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@group.GroupId">Editează</a>
+                            <form asp-action="Delete" method="post" class="d-inline">
+                                <input type="hidden" name="id" value="@group.GroupId" />
+                                <button type="submit" class="btn btn-danger btn-sm">Șterge grupul</button>
+                            </form>
+                        }
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary" asp-action="New">Creează un grup nou</a>
+</div>
+
+<style>
+    /* Celulă pentru acțiuni */
+table td:last-child {
+    display: flex; /* Așează elementele în linie orizontală */
+    justify-content: center; /* Aliniază butoanele pe centru */
+    align-items: center; /* Aliniere verticală */
+    gap: 10px; /* Spațiu între butoane */
+    flex-wrap: wrap; /* Permite trecerea pe un nou rând dacă spațiul este insuficient */
+}
+
+/* Stil pentru butoane */
+table .btn {
+    padding: 5px 8px; /* Ajustează dimensiunea padding-ului */
+    font-size: 0.8rem; /* Dimensiune font mai mică */
+    white-space: nowrap; /* Previne spargerea textului în butoane */
+}
+</style>

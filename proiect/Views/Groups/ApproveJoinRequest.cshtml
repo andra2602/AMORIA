@@ -1,0 +1,10 @@
+﻿@model proiect.Models.UserGroup
+
+<h2 class="text-center">Aprobare cerere de alăturare</h2>
+
+<p>Confirmați că doriți să aprobați cererea de alăturare a utilizatorului @Model.User.UserFirstName @Model.User.UserLastName la grupul @Model.Group.GroupName?</p>
+
+<form method="post">
+    <button type="submit" class="btn btn-success">Aprobați cererea</button>
+    <a class="btn btn-secondary" asp-action="Show" asp-route-id="@Model.Group.GroupId">Anulează</a>
+</form>

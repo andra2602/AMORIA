@@ -1,0 +1,33 @@
+﻿@model proiect.Models.Post
+
+<link href="~/css/editPost.css" rel="stylesheet" />
+
+<h2>Editare postare din grup</h2>
+
+<form asp-action="EditGroupPost" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="PostId" value="@Model.PostId" />
+    <input type="hidden" name="GroupId" value="@Model.GroupId" />
+
+    <div class="mb-3">
+        <label for="PostContent" class="form-label">Conținut postare</label>
+        <textarea class="form-control" id="PostContent" name="PostContent" rows="5" required>@Model.PostContent</textarea>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Imagine/Videoclip existent</label>
+        @if (!string.IsNullOrEmpty(Model.ImageVideoPath))
+        {
+            <p>Fișier curent: <a href="@Model.ImageVideoPath" target="_blank">Deschide</a></p>
+        }
+        <label class="form-label">Încarcă imagine sau videoclip nou (opțional)</label>
+        <input type="file" class="form-control" name="ImageVideoPath" />
+    </div>
+
+    <div class="mb-3">
+        <label for="EmbeddedVideoUrl" class="form-label">Link videoclip embedded (opțional)</label>
+        <input type="url" class="form-control" id="EmbeddedVideoUrl" name="EmbeddedVideoUrl" value="@Model.EmbeddedVideoUrl" placeholder="Ex: https://www.youtube.com/embed/ID_VIDEO" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Salvează modificările</button>
+    <a class="btn btn-secondary" asp-action="ShowGroupPost" asp-route-id="@Model.PostId">Anulează</a>
+</form>

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<proiect.Models.UserGroup>
+
+<link rel="stylesheet" href="~/css/site.css"/>
+<link rel="stylesheet" href="~/css/requests.css"/>
+
+<h2 class="title-dancing-script">Cererile de alăturare la grupuri</h2>
+
+@if (!Model.Any())
+{
+    <p class="text-center">Nu există cereri de alăturare în așteptare.</p>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var request in Model)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>
+                    @request.User.UserFirstName @request.User.UserLastName dorește să se alăture grupului @request.Group.GroupName.
+                </span>
+                <span>
+                    <form asp-action="ApproveGroupRequest" method="post" class="d-inline">
+                        <input type="hidden" name="groupId" value="@request.GroupId" />
+                        <input type="hidden" name="userId" value="@request.UserId" />
+                        <button type="submit" class="btn btn-success btn-sm">Aprobă</button>
+                    </form>
+                    <form asp-action="DeclineGroupRequest" method="post" class="d-inline">
+                        <input type="hidden" name="groupId" value="@request.GroupId" />
+                        <input type="hidden" name="userId" value="@request.UserId" />
+                        <button type="submit" class="btn btn-danger btn-sm">Respinge</button>
+                    </form>
+                </span>
+            </li>
+        }
+    </ul>
+}

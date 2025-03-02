@@ -1,0 +1,80 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\PROIECT FINAL C#\\proiect\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AD101E81-3E5E-4D4E-9642-A8253BBD61C5}|proiect\\proiect.csproj|e:\\proiect final c#\\proiect\\proiect\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD101E81-3E5E-4D4E-9642-A8253BBD61C5}|proiect\\proiect.csproj|solutionrelative:proiect\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD101E81-3E5E-4D4E-9642-A8253BBD61C5}|proiect\\proiect.csproj|e:\\proiect final c#\\proiect\\proiect\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD101E81-3E5E-4D4E-9642-A8253BBD61C5}|proiect\\proiect.csproj|solutionrelative:proiect\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GroupsController.cs",
+              "DocumentMoniker": "E:\\PROIECT FINAL C#\\proiect\\proiect\\Controllers\\GroupsController.cs",
+              "RelativeDocumentMoniker": "proiect\\Controllers\\GroupsController.cs",
+              "ToolTip": "E:\\PROIECT FINAL C#\\proiect\\proiect\\Controllers\\GroupsController.cs",
+              "RelativeToolTip": "proiect\\Controllers\\GroupsController.cs",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAAAOMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T13:08:33.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "E:\\PROIECT FINAL C#\\proiect\\proiect\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "proiect\\Controllers\\UsersController.cs",
+              "ToolTip": "E:\\PROIECT FINAL C#\\proiect\\proiect\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "proiect\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAuwP4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T13:04:16.399Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1099,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

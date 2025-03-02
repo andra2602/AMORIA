@@ -1,0 +1,59 @@
+﻿@model proiect.Models.Group
+
+
+<link href="~/css/newGroup.css" rel="stylesheet" />
+
+@if (TempData["success"] != null)
+
+{
+    <div class="alert alert-success">
+        @TempData["success"]
+    </div>
+}
+@if (TempData["error"] != null)
+
+{
+    <div class="alert alert-danger">
+        @TempData["error"]
+    </div>
+}
+
+
+<div class="group-form-container">
+    <h2 class="text-center">Crează un grup nou</h2>
+
+    <form asp-action="New" method="post" class="group-form">
+         
+
+        <div class="form-group">
+            <label for="GroupName" class="form-label">Nume Grup</label>
+            <input asp-for="GroupName" class="form-control" />
+            <span asp-validation-for="GroupName" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="GroupDescription" class="form-label">Descriere</label>
+            <textarea asp-for="GroupDescription" class="form-control"></textarea>
+            <span asp-validation-for="GroupDescription" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="Max" class="form-label">Număr maxim de participanți</label>
+            <input asp-for="Max" type="number" class="form-control" />
+            <span asp-validation-for="Max" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="Private" class="form-label">Vizibilitate</label>
+            <select asp-for="Private" class="form-control">
+                <option value="false">Public</option>
+                <option value="true">Privat</option>
+            </select>
+            <span asp-validation-for="Private" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary group-btn-success">Creează Grup</button>
+    </form>
+
+    <a class="btn btn-secondary group-btn-secondary" asp-action="Index">Înapoi la lista grupurilor</a>
+</div>

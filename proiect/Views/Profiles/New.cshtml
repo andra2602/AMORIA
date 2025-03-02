@@ -1,0 +1,67 @@
+﻿@model proiect.Models.Profile
+
+<link rel="stylesheet" href="~/css/register2.css">
+<style>
+    .text-danger {
+        color: white !important;
+    }
+</style>
+
+
+<h2>Creează un profil nou</h2>
+ 
+<form asp-controller="Profiles" asp-action="New" enctype="multipart/form-data" method="post">
+<!-- Nume Profil -->
+<div class="mb-3">
+<label asp-for="ProfileName" class="form-label">Nume Profil</label>
+<input asp-for="ProfileName" class="form-control" required />
+<span asp-validation-for="ProfileName" class="text-danger"></span>
+</div>
+ 
+    <!-- Descriere -->
+<div class="mb-3">
+<label asp-for="Description" class="form-label">Descriere</label>
+<textarea asp-for="Description" class="form-control" rows="5" required></textarea>
+<span asp-validation-for="Description" class="text-danger"></span>
+</div>
+ 
+    <!-- Website -->
+<div class="mb-3">
+<label asp-for="Website" class="form-label">Website</label>
+<input asp-for="Website" class="form-control" type="url" />
+<span asp-validation-for="Website" class="text-danger"></span>
+</div>
+ 
+    <!-- Locație -->
+<div class="mb-3">
+<label asp-for="Location" class="form-label">Locație</label>
+<input asp-for="Location" class="form-control" />
+<span asp-validation-for="Location" class="text-danger"></span>
+</div>
+ 
+    <!-- Vizibilitate -->
+<div class="form-check mb-3">
+<input asp-for="Visibility" class="form-check-input" />
+<label asp-for="Visibility" class="form-check-label">Profil public</label>
+<span asp-validation-for="Visibility" class="text-danger"></span>
+</div>
+ 
+    <!-- Imagine Profil -->
+<div class="mb-3">
+<label asp-for="ImagePath" class="form-label">Imagine Profil</label>
+<input asp-for="ImagePath" class="form-control" type="file" />
+<small class="form-text text-muted">Acceptăm doar formate .jpg, .jpeg, .png, .gif</small>
+<span asp-validation-for="ImagePath" class="text-danger"></span>
+</div>
+ 
+    <!-- Butoane -->
+<button type="submit" class="btn btn-success">Creează</button>
+<a class="btn btn-secondary" asp-action="Index">Anulează</a>
+</form>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+ 
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}

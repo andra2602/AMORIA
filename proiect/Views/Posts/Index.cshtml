@@ -1,0 +1,39 @@
+﻿@model IEnumerable<proiect.Models.Post>
+
+<h2 class="text-center">Postările utilizatorului</h2>
+
+@if (TempData["message"] != null)
+{
+    <div class="alert alert-success text-center">
+        @TempData["message"]
+    </div>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Data postării</th>
+            <th>Conținut</th>
+            <th>Acțiuni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var post in Model)
+        {
+            <tr>
+                <td>@post.PostDate.ToString("dd/MM/yyyy")</td>
+                <td>@post.PostContent</td>
+                <td>
+                    <a class="btn btn-info btn-sm" asp-action="Show" asp-route-id="@post.PostId">Vezi detalii</a>
+                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@post.PostId">Editează</a>
+                    <form asp-action="Delete" method="post" class="d-inline">
+                        <input type="hidden" name="id" value="@post.PostId" />
+                        <button type="submit" class="btn btn-danger btn-sm">Șterge</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-secondary" asp-action="Index">Înapoi la lista de utilizatori</a>

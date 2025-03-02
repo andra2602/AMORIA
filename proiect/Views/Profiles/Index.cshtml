@@ -1,0 +1,38 @@
+﻿@model IEnumerable<proiect.Models.Profile>
+
+<h2 class="text-center">Lista profilurilor</h2>
+
+@if (TempData["message"] != null)
+{
+    <div class="alert alert-success text-center">
+        @TempData["message"]
+    </div>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nume Profil</th>
+            <th>Utilizator</th>
+            <th>Vizibilitate</th>
+            <th>Acțiuni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var profile in Model)
+        {
+            <tr>
+                <td>@profile.ProfileName</td>
+                <td>@profile.User.UserFirstName @profile.User.UserLastName</td>
+                <td>@(profile.Visibility ? "Public" : "Privat")</td>
+                <td>
+                    <a class="btn btn-info btn-sm" asp-action="Show" asp-route-id="@profile.Id">Vezi</a>
+                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@profile.Id">Editează</a>
+                    <form asp-action="Delete" asp-route-id="@profile.Id" method="post" class="d-inline">
+                        <button type="submit" class="btn btn-danger btn-sm">Șterge</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

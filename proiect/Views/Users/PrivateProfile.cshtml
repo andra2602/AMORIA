@@ -1,0 +1,74 @@
+﻿@model proiect.Models.ApplicationUser
+@using System.Linq
+
+<link href="~/css/privateProfile.css" rel="stylesheet" />
+
+@if (TempData["message"] != null)
+{
+    <div class="alert alert-info text-center">
+        @TempData["message"]
+    </div>
+}
+
+<div class="private-profile-container">
+    <h2 class="private-profile-title">Profil Privat</h2>
+
+    <div class="private-profile-details">
+        <p><strong>Nume:</strong> @Model.UserFirstName @Model.UserLastName</p>
+        <p><strong>Descriere:</strong> @Model.Profile?.Description</p>
+
+        @if (!string.IsNullOrEmpty(Model.Profile?.ImagePath))
+        {
+            <p><img src="@Model.Profile.ImagePath" alt="Imagine Profil" class="profile-image img-thumbnail" /></p>
+        }
+    </div>
+
+    @if (User.Identity.IsAuthenticated && User.FindFirst("sub")?.Value != Model.Id && ViewBag.AfisareButoane == true)
+    {
+        <form asp-controller="Friendships" asp-action="AddFriend" method="post" class="friend-request-form">
+            <input type="hidden" name="friendId" value="@Model.Id" />
+            <button type="submit" class="btn btn-primary">Trimite cerere de prietenie</button>
+        </form>
+    }
+
+    <h3 class="posts-title">Postările utilizatorului</h3>
+    @if (Model.Posts != null && Model.Posts.Any(p => p.GroupId == null))
+    {
+        <ul class="posts-list">
+            @foreach (var post in Model.Posts.Where(p => p.GroupId == null))
+            {
+                <li class="post-item">
+                    <p><strong>Conținut:</strong> @post.PostContent</p>
+                    <!-- Afișăm imaginea dacă există -->
+                    @if (!string.IsNullOrEmpty(@post.ImageVideoPath))
+                    {
+                        var fileExtension = System.IO.Path.GetExtension(@post.ImageVideoPath).ToLower();
+                        if (fileExtension == ".mp4" || fileExtension == ".mov")
+                        {
+                            <div class="media-container" style="margin-top: 20px;">
+                                <video controls style="max-width:500px;">
+                                    <source src="@post.ImageVideoPath" type="video/mp4">
+                                    Browserul dvs. nu suportă redarea acestui videoclip.
+                                </video>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="media-container" style="margin-top: 20px;">
+                                <img src="@post.ImageVideoPath" alt="Imagine postare" style="max-width:500px;">
+                            </div>
+                        }
+                    }
+                    <p><small>Publicat pe: @post.PostDate.ToString("dd/MM/yyyy")</small></p>
+                    <a class="btn btn-primary btn-sm" asp-controller="Posts" asp-action="Show" asp-route-id="@post.PostId">Accesează postarea</a>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p class="no-posts">Acest utilizator nu are postări.</p>
+    }
+
+    <a class="btn btn-secondary" asp-action="Search" asp-controller="Users">Înapoi</a>
+</div>

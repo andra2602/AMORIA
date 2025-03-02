@@ -1,0 +1,168 @@
+﻿body {
+    background: #FBF8EF;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mesaje TempData */
+.alert-success {
+    background-color: #D4EDDA; /* Verde deschis */
+    color: #155724;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #C3E6CB;
+}
+
+/* Container grup */
+.group-container {
+    max-width: 900px;
+    background-color: #FFFFFF; /* Alb pentru container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+}
+
+/* Titlu grup */
+.group-title {
+    font-size: 2rem;
+    color: #2C3E50; /* Albastru închis */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Descriere grup */
+.group-description {
+    font-size: 1.1rem;
+    color: #555; /* Gri închis */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Mesaj pentru utilizatorii fără acces */
+.no-access-message {
+    font-size: 1rem;
+    color: #C0392B; /* Roșu */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Buton pentru adăugare postare */
+.btn-success {
+    background-color: #FFC96F;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-success:hover {
+        background-color: #ffac21;
+    }
+
+.button-back {
+    position: fixed;
+    bottom: 20px; /* La 20px de jos */
+    left: 20px; /* La 20px de marginea stângă */
+    z-index: 100; /* Asigură-te că este deasupra altor elemente */
+}
+
+    .button-back .btn {
+        padding: 10px 15px; /* Ajustează dimensiunea butonului */
+        font-size: 14px; /* Dimensiunea textului */
+        background-color: #FFC96F;
+        color: white;
+    }
+
+        .button-back .btn:hover {
+            background-color: #ffac21; /* Culoare mai închisă la hover */
+        }
+
+/* Butonul "Adaugă Postare Nouă" */
+.button-add-post {
+    position: fixed;
+    bottom: 20px; /* La 20px de jos */
+    right: 20px; /* La 20px de marginea dreaptă */
+    z-index: 100; /* Asigură-te că este deasupra altor elemente */
+}
+
+    .button-add-post .btn {
+        padding: 10px 15px; /* Ajustează dimensiunea butonului */
+        font-size: 14px; /* Dimensiunea textului */
+        background-color: #FFC96F; /* Verde pentru stil consistent */
+        color: white; /* Text alb */
+    }
+
+        .button-add-post .btn:hover {
+            background-color: #ffac21; /* Culoare mai închisă la hover */
+        }
+
+/* Listă postări */
+.posts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-item {
+    background-color: #F9F9F9; /* Gri foarte deschis */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+    font-size: 1.4rem;
+    color: #34495E; /* Albastru-gri */
+    margin-bottom: 10px;
+}
+
+.post-date {
+    font-size: 0.9rem;
+    color: #7F8C8D; /* Gri */
+    margin-bottom: 10px;
+}
+
+
+/
+/* Videoclipuri în postări */
+.post-video iframe {
+    width: 100%; /* Redimensionare pe lățimea containerului */
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Buton pentru accesarea postării */
+.btn-info {
+    background-color: #FFC96F;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-info:hover {
+        background-color: #ffac21;
+    }
+
+
+
+/* Imagini în postări */
+.post-image img {
+    display: block; /* Elimină marginile implicite ale imaginilor inline */
+    width: 100%; /* Lățime maximă egală cu containerul */
+    max-height: 600px; /* Înălțime maximă pentru a controla proporțiile */
+    object-fit: contain; /* Asigură redimensionare fără decupare */
+    margin: 0 auto; /* Centrează imaginea în container */
+    border-radius: 8px; /* Colțuri rotunjite pentru un aspect modern */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+}

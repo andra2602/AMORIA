@@ -1,0 +1,72 @@
+﻿@model proiect.Models.Group
+
+<link href="~/css/ViewGroup.css" rel="stylesheet" />
+
+@if (TempData["message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["message"]
+    </div>
+}
+
+<div class="button-back">
+    <a class="btn btn-secondary" asp-action="Index">Înapoi la lista grupurilor</a>
+</div>
+
+@if (ViewBag.IsMember)
+{
+    <div class="button-add-post">
+        <a class="btn btn-success" asp-controller="Posts" asp-action="AddPostToGroup" asp-route-groupId="@Model.GroupId">
+            <i class="bi bi-plus-circle"></i> Adaugă Postare Nouă
+        </a>
+    </div>
+}
+
+
+<div class="group-container">
+    <h2 class="group-title">@Model.GroupName</h2>
+    <p class="group-description">@Model.GroupDescription</p>
+
+    <h3>Postările din grup</h3>
+    <ul class="posts-list">
+        @foreach (var post in Model.Posts)
+        {
+            <li class="post-item mb-4">
+                <h3 class="post-title">@post.PostContent</h3>
+                <p class="post-date">Publicat la: @post.PostDate</p>
+
+                <!-- Afișăm imaginea dacă există -->
+                @if (!string.IsNullOrEmpty(@post.ImageVideoPath))
+                {
+                    var fileExtension = System.IO.Path.GetExtension(@post.ImageVideoPath).ToLower();
+                    if (fileExtension == ".mp4" || fileExtension == ".mov")
+                    {
+                        <div class="media-container" style="margin-top: 20px;">
+                            <video controls style="max-width:500px;">
+                                <source src="@post.ImageVideoPath" type="video/mp4">
+                                Browserul dvs. nu suportă redarea acestui videoclip.
+                            </video>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="media-container" style="margin-top: 20px;">
+                            <img src="@post.ImageVideoPath" alt="Imagine postare" style="max-width:500px;">
+                        </div>
+                    }
+                }
+
+                @if (!string.IsNullOrEmpty(post.EmbeddedVideoUrl))
+                {
+                    <div class="post-video mt-3">
+                        <iframe width="100%" height="315" src="@post.EmbeddedVideoUrl" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                }
+
+                <a asp-controller="Posts" asp-action="ShowGroupPost" asp-route-id="@post.PostId" class="btn btn-info btn-sm mt-2">
+                    <i class="bi bi-eye"></i> Accesează postare
+                </a>
+            </li>
+        }
+    </ul>
+</div>

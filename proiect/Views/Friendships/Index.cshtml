@@ -1,0 +1,56 @@
+﻿@model IEnumerable<proiect.Models.Friendship>
+
+@section Styles {
+    <link href="~/css/friendships.css" rel="stylesheet" />
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Prietenii mei</h2>
+
+    @if (TempData["message"] != null)
+    {
+        <div class="alert alert-success text-center">
+            @TempData["message"]
+        </div>
+    }
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-header">
+            <tr>
+                <th>Utilizator 1</th>
+                <th>Utilizator 2</th>
+                <th>Status</th>
+                <th>Acțiuni</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var friendship in Model)
+            {
+                <tr>
+
+                    <td>@friendship.User1.UserFirstName @friendship.User1.UserLastName</td>
+                    <td>@friendship.User2.UserFirstName @friendship.User2.UserLastName</td>
+                    <td>
+                        <span class="badge badge-status">
+                            @friendship.Status
+                        </span>
+                    </td>
+                    <td>
+                        @{
+                            var currentUserId = User.FindFirst("sub")?.Value;
+                            var friendId = currentUserId == friendship.User1.Id
+                            ? friendship.User2.Id
+                            : friendship.User1.Id;
+                        }
+                        <a class="btn profile-btn profile-btn-info btn-sm" asp-action="Show" asp-route-id="@friendship.FriendshipId">Vezi detalii</a>
+                        <a class="btn profile-btn profile-btn-info btn-sm" asp-action="YourProfile" asp-controller="Profiles">Inapoi</a>
+                        <form asp-action="DeleteFriend" method="post" class="d-inline">
+                            <input type="hidden" name="id" value="@friendship.FriendshipId" />
+                            <button type="submit" class="btn profile-btn profile-btn-danger btn-sm">Șterge prietenia</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

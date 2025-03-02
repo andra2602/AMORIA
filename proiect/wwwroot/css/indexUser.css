@@ -1,0 +1,131 @@
+﻿indexUser.css
+/* Container general pentru lista utilizatorilor */
+.users-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #FFFFFF; /* Alb */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+}
+
+/* Titlu */
+h2 {
+    font-size: 2rem;
+    color: #333; /* Gri închis */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Mesaj temporar */
+.alert {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #66BB6A; /* Verde pentru succes */
+    color: #FFFFFF;
+}
+
+/* Formular de căutare */
+.search-form {
+    margin-bottom: 20px;
+}
+
+.input-group .form-control {
+    border: 1px solid #CCC;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.search-btn {
+    background-color: #FFA62F; /* Portocaliu */
+    border: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+    .search-btn:hover {
+        background-color: #FF8C00; /* Portocaliu intens */
+    }
+
+/* Tabel */
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    .users-table th {
+        background-color: #FFA62F; /* Galben-portocaliu */
+        color: white;
+        padding: 10px;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .users-table td {
+        padding: 10px;
+        border-bottom: 1px solid #E0E0E0;
+        font-size: 0.95rem;
+        color: #555; /* Gri mediu */
+    }
+
+    .users-table tr:nth-child(even) {
+        background-color: #F8F8F8; /* Gri deschis */
+    }
+
+    .users-table tr:hover {
+        background-color: #FFF3E0; /* Portocaliu pal la hover */
+    }
+
+/* Butoane */
+.btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 5px;
+    color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-info {
+    background-color: #FFA62F; /* Galben-portocaliu */
+    color: #FFFFFF;
+}
+
+    .btn-info:hover {
+        background-color: #FF8C00; /* Portocaliu intens */
+    }
+
+.btn-warning {
+    background-color: #FFC96F; /* Galben pastel */
+    color: #333;
+}
+
+    .btn-warning:hover {
+        background-color: #FFA62F; /* Galben intens */
+        color: #FFFFFF;
+    }
+
+.btn-danger {
+    background-color: #E57373; /* Roșu deschis */
+    color: #FFFFFF;
+}
+
+    .btn-danger:hover {
+        background-color: #EF5350; /* Roșu intens */
+    }

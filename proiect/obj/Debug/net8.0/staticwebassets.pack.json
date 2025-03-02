@@ -1,0 +1,525 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\proiect.bundle.scp.css",
+      "PackagePath": "staticwebassets\\proiect.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\ViewGroup.css",
+      "PackagePath": "staticwebassets\\css\\ViewGroup.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\ViewParticipants.css",
+      "PackagePath": "staticwebassets\\css\\ViewParticipants.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\deleteUser.css",
+      "PackagePath": "staticwebassets\\css\\deleteUser.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\deletepost.css",
+      "PackagePath": "staticwebassets\\css\\deletepost.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\editComment.css",
+      "PackagePath": "staticwebassets\\css\\editComment.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\editGroup.css",
+      "PackagePath": "staticwebassets\\css\\editGroup.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\editPost.css",
+      "PackagePath": "staticwebassets\\css\\editPost.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\editprofile.css",
+      "PackagePath": "staticwebassets\\css\\editprofile.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\friendships.css",
+      "PackagePath": "staticwebassets\\css\\friendships.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\indexGroup.css",
+      "PackagePath": "staticwebassets\\css\\indexGroup.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\indexUser.css",
+      "PackagePath": "staticwebassets\\css\\indexUser.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\newGroup.css",
+      "PackagePath": "staticwebassets\\css\\newGroup.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\newpost.css",
+      "PackagePath": "staticwebassets\\css\\newpost.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\privacy.css",
+      "PackagePath": "staticwebassets\\css\\privacy.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\privateProfile.css",
+      "PackagePath": "staticwebassets\\css\\privateProfile.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\publicProfile.css",
+      "PackagePath": "staticwebassets\\css\\publicProfile.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\register2.css",
+      "PackagePath": "staticwebassets\\css\\register2.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\requests.css",
+      "PackagePath": "staticwebassets\\css\\requests.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\searchUser.css",
+      "PackagePath": "staticwebassets\\css\\searchUser.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\showGroup.css",
+      "PackagePath": "staticwebassets\\css\\showGroup.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\showfriendship.css",
+      "PackagePath": "staticwebassets\\css\\showfriendship.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\showpost.css",
+      "PackagePath": "staticwebassets\\css\\showpost.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\showprofile.css",
+      "PackagePath": "staticwebassets\\css\\showprofile.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\css\\yourprofile.css",
+      "PackagePath": "staticwebassets\\css\\yourprofile.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\1.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\1b7933fa-939c-4435-a1cb-1604dcd1d71c.jpg",
+      "PackagePath": "staticwebassets\\images\\1b7933fa-939c-4435-a1cb-1604dcd1d71c.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\2A4A5664 copy.jpg",
+      "PackagePath": "staticwebassets\\images\\2A4A5664 copy.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\2A4A5667 copybw.jpg",
+      "PackagePath": "staticwebassets\\images\\2A4A5667 copybw.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\2A4A5678-2 copy.jpg",
+      "PackagePath": "staticwebassets\\images\\2A4A5678-2 copy.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\2A4A5747 copy.jpg",
+      "PackagePath": "staticwebassets\\images\\2A4A5747 copy.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\2A4A5994.JPG",
+      "PackagePath": "staticwebassets\\images\\2A4A5994.JPG"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\2A4A6185.JPG",
+      "PackagePath": "staticwebassets\\images\\2A4A6185.JPG"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\3.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\4.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\5.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\WIN_20241204_14_08_20_Pro.jpg",
+      "PackagePath": "staticwebassets\\images\\WIN_20241204_14_08_20_Pro.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\alexandra1.jpg",
+      "PackagePath": "staticwebassets\\images\\alexandra1.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\alexandra2.jpg",
+      "PackagePath": "staticwebassets\\images\\alexandra2.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\alt_be_real.jpg",
+      "PackagePath": "staticwebassets\\images\\alt_be_real.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\andra.jpg",
+      "PackagePath": "staticwebassets\\images\\andra.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\andra_colaj.jpg",
+      "PackagePath": "staticwebassets\\images\\andra_colaj.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\andra_munte.jpg",
+      "PackagePath": "staticwebassets\\images\\andra_munte.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\andra_one_direction.jpg",
+      "PackagePath": "staticwebassets\\images\\andra_one_direction.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\andra_postare1.jpg",
+      "PackagePath": "staticwebassets\\images\\andra_postare1.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\andra_poza_profil.jpg",
+      "PackagePath": "staticwebassets\\images\\andra_poza_profil.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\andra_profil.jpg",
+      "PackagePath": "staticwebassets\\images\\andra_profil.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\andra_teatru.jpg",
+      "PackagePath": "staticwebassets\\images\\andra_teatru.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\andra_video.mp4",
+      "PackagePath": "staticwebassets\\images\\andra_video.mp4"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\be_real.jpg",
+      "PackagePath": "staticwebassets\\images\\be_real.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\dans_cu_mine.mp4",
+      "PackagePath": "staticwebassets\\images\\dans_cu_mine.mp4"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\dans_halloween.mp4",
+      "PackagePath": "staticwebassets\\images\\dans_halloween.mp4"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\default.jpg",
+      "PackagePath": "staticwebassets\\images\\default.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\iesire_cu_andra.jpg",
+      "PackagePath": "staticwebassets\\images\\iesire_cu_andra.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logo.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\pentru_grup.jpg",
+      "PackagePath": "staticwebassets\\images\\pentru_grup.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\postare1_grup232.jpg",
+      "PackagePath": "staticwebassets\\images\\postare1_grup232.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\postare1_tocuri.jpg",
+      "PackagePath": "staticwebassets\\images\\postare1_tocuri.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\postare3.jpg",
+      "PackagePath": "staticwebassets\\images\\postare3.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\postare4.jpg",
+      "PackagePath": "staticwebassets\\images\\postare4.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\postare5.jpg",
+      "PackagePath": "staticwebassets\\images\\postare5.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\postare6.jpg",
+      "PackagePath": "staticwebassets\\images\\postare6.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\images\\selfie_andra.jpg",
+      "PackagePath": "staticwebassets\\images\\selfie_andra.jpg"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\PROIECT FINAL C#\\proiect\\proiect\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.proiect.props",
+      "PackagePath": "build\\proiect.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.proiect.props",
+      "PackagePath": "buildMultiTargeting\\proiect.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.proiect.props",
+      "PackagePath": "buildTransitive\\proiect.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.proiect.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

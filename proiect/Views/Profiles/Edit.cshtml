@@ -1,0 +1,72 @@
+﻿@model proiect.Models.Profile
+
+@section Styles {
+    <link href="~/css/editprofile.css" rel="stylesheet" />
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Editare Profil</h2>
+
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-danger">
+            <ul>
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <li>@error.ErrorMessage</li>
+                }
+            </ul>
+        </div>
+    }
+
+    <form asp-action="Edit" method="post" enctype="multipart/form-data" class="profile-form">
+        <input type="hidden" name="ProfileId" value="@Model.Id" />
+
+        <div class="mb-3">
+            <label for="ProfileName" class="form-label">Nume Profil</label>
+            <input type="text" class="form-control" id="ProfileName" name="ProfileName" value="@Model.ProfileName" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="Description" class="form-label">Descriere</label>
+            <textarea class="form-control" id="Description" name="Description" rows="5">@Model.Description</textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="Website" class="form-label">Website</label>
+            <input type="url" class="form-control" id="Website" name="Website" value="@Model.Website" />
+        </div>
+
+        <div class="mb-3">
+            <label for="Location" class="form-label">Locație</label>
+            <input type="text" class="form-control" id="Location" name="Location" value="@Model.Location" />
+        </div>
+
+        <div class="mb-3">
+            <label for="Visibility" class="form-label">Vizibilitate</label>
+            <div class="form-check">
+                <input type="radio" id="Public" class="form-check-input" name="Visibility" value="true" @(Model.Visibility ? "checked" : "") />
+                <label for="Public" class="form-check-label">Public</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="Private" class="form-check-input" name="Visibility" value="false" @(!Model.Visibility ? "checked" : "") />
+                <label for="Private" class="form-check-label">Privat</label>
+            </div>
+        </div>
+
+        <!-- Imagine Profil -->
+        <div class="mb-3">
+            <label for="ProfileImage" class="form-label">Imagine Profil</label>
+            <div class="mb-2">
+                <img src="@($"{Model.ImagePath}?{DateTime.Now.Ticks}")" alt="Imagine Profil" class="img-thumbnail" style="width: 150px; height: 150px;" />
+            </div>
+            <input class="form-control" type="file" id="ProfileImage" name="ProfileImage" />
+            <small class="form-text text-muted">Acceptăm doar formate .jpg, .jpeg, .png, .gif</small>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn profile-btn profile-btn-success">Salvează</button>
+            <a class="btn profile-btn profile-btn-secondary" asp-action="YourProfile" asp-controller="Profiles">Anulează</a>
+        </div>
+    </form>
+</div>

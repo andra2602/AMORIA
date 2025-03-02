@@ -1,0 +1,112 @@
+﻿
+/* Fundal general */
+body {
+    background: #FBF8EF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #333; /* Text general */
+}
+
+/* Container general */
+.container {
+    max-width: 1300px;
+    padding: 20px;
+    margin: 40px auto;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: none; /* Fără chenare vizibile */
+    margin-bottom: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbra containerului */
+}
+
+/* Titluri */
+h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FFA07A; /* Linie subțire pentru evidențiere */
+    padding-bottom: 10px;
+}
+
+/* Tabel detalii */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    table th {
+        padding: 10px;
+        text-align: left;
+        font-weight: bold;
+        color: #FF7F50; /* Portocaliu pastel */
+        background-color: #FFF7EB; /* Fundal deschis pentru header */
+        border: 1px solid #E0E0E0;
+    }
+
+    table td {
+        padding: 10px;
+        color: #555;
+        background-color: #FFF7EB; /* Fundal deschis pentru celule */
+        border: 1px solid #E0E0E0; /* Linie subțire */
+    }
+
+/* Butoane */
+.btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px 5px;
+}
+
+/* Buton Acceptă */
+.profile-btn-primary {
+    background-color: #FFA07A; /* Portocaliu */
+    color: #FFFFFF;
+    border: none;
+}
+
+    .profile-btn-primary:hover {
+        background-color: #FF7F50; /* Portocaliu intens */
+        transform: scale(1.05); /* Efect de mărire ușoară */
+    }
+
+/* Buton Refuză */
+.profile-btn-danger {
+    background-color: #FF6B6B; /* Roșu pastel */
+    color: #FFFFFF;
+    border: none;
+}
+
+    .profile-btn-danger:hover {
+        background-color: #FF3B3B; /* Roșu intens */
+        transform: scale(1.05); /* Efect de mărire ușoară */
+    }
+
+/* Buton Înapoi */
+.profile-btn-secondary {
+    background-color: #B0BEC5; /* Gri pastel */
+    color: #FFFFFF;
+    border: none;
+}
+
+    .profile-btn-secondary:hover {
+        background-color: #90A4AE; /* Gri mai închis */
+        transform: scale(1.05); /* Efect de mărire ușoară */
+    }
+
+/* Centrare */
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+}

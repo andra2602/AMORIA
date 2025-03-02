@@ -1,0 +1,101 @@
+﻿newGroup.css
+/* Container general pentru formular */
+.group-form-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #FFFFFF; /* Alb */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+}
+
+/* Titlu */
+h2 {
+    font-size: 2rem;
+    color: #333; /* Gri închis */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Stil pentru grupurile de formular */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Etichetele formularului */
+.form-label {
+    font-weight: bold;
+    color: #333; /* Gri închis */
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Inputuri și textarea */
+.form-control {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+    .form-control:focus {
+        border-color: #FFA62F; /* Portocaliu */
+        box-shadow: 0 0 5px rgba(255, 166, 47, 0.5);
+    }
+
+/* Butoane */
+.group-btn-success {
+    background-color: #FFA62F; /* Portocaliu */
+    color: #FFFFFF;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+    .group-btn-success:hover {
+        background-color: #FF8C00; /* Portocaliu intens */
+    }
+
+.group-btn-secondary {
+    background-color: #B0BEC5; /* Gri deschis */
+    color: #FFFFFF;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+    .group-btn-secondary:hover {
+        background-color: #90A4AE; /* Gri intens */
+    }
+
+/* Mesajele de eroare */
+.text-danger {
+    font-size: 0.9rem;
+    color: #E57373; /* Roșu deschis */
+}
+
+.alert-danger {
+    background-color: #F8D7DA; /* Roz deschis */
+    color: #721C24; /* Roșu închis */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+/* Spațiere între butoane */
+button + a {
+    margin-left: 10px;
+}

@@ -1,0 +1,64 @@
+﻿@model proiect.Models.Post
+<link rel="stylesheet" href="~/css/deletepost.css" />
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Confirmare ștergere postare din grup</h2>
+
+    <!-- Prompt-ul pentru acces neautorizat -->
+    @if (ViewData["ErrorMessage"] != null)
+    {
+        <script>
+            alert('@ViewData["ErrorMessage"]');
+            window.location.href = '@Url.Action("ViewGroup", "Groups", new { id = Model.GroupId })';
+        </script>
+    }
+
+    <!-- Dacă utilizatorul are permisiune, afișăm formularul -->
+    @if (ViewData["ErrorMessage"] == null)
+    {
+        <p class="text-center">Ești sigur că vrei să ștergi această postare din grup?</p>
+
+        <div class="card post-card">
+            <div class="card-body">
+                <h4 class="card-title">@Model.PostContent</h4>
+                <p class="post-date text-muted">Publicată la: @Model.PostDate.ToString("dd/MM/yyyy HH:mm")</p>
+
+                <!-- Afișăm imaginea dacă există -->
+                @if (!string.IsNullOrEmpty(Model.ImageVideoPath))
+                {
+                    var fileExtension = System.IO.Path.GetExtension(Model.ImageVideoPath).ToLower();
+                    if (fileExtension == ".mp4" || fileExtension == ".mov")
+                    {
+                        <div class="media-container" style="margin-top: 20px;">
+                            <video controls style="max-width:500px;">
+                                <source src="@Model.ImageVideoPath" type="video/mp4">
+                                Browserul dvs. nu suportă redarea acestui videoclip.
+                            </video>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="media-container" style="margin-top: 20px;">
+                            <img src="@Model.ImageVideoPath" alt="Imagine postare" style="max-width:500px;">
+                        </div>
+                    }
+                }
+
+                <!-- Afișăm videoclipul embedded dacă există -->
+                @if (!string.IsNullOrEmpty(Model.EmbeddedVideoUrl))
+                {
+                    <div class="post-video mt-4">
+                        <iframe width="100%" height="315" src="@Model.EmbeddedVideoUrl" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <form asp-action="DeleteGroupPostConfirmed" asp-controller="Posts" method="post" class="text-center mt-4">
+            <input type="hidden" name="id" value="@Model.PostId" />
+            <button type="submit" class="btn profile-btn-danger">Șterge</button>
+            <a class="btn profile-btn-secondary" asp-action="ViewGroup" asp-controller="Groups" asp-route-id="@Model.GroupId">Anulează</a>
+        </form>
+
+    }
+</div>

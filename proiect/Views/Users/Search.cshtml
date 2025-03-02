@@ -1,0 +1,27 @@
+﻿@model IEnumerable<proiect.Models.ApplicationUser>
+
+<link rel="stylesheet" href="~/css/searchUser.css" />
+
+<h2 class="text-center text-danger mb-4">Rezultatele căutării</h2>
+@if (Model.Any())
+{
+    @foreach (var user in Model)
+    {
+        <div class="card mb-3 border-danger bg-light shadow-sm">
+            <!-- Card cu bordură roșie și fundal deschis -->
+            <div class="card-body">
+                <h4 class="text-danger">@user.UserFirstName @user.UserLastName</h4> <!-- Nume utilizator stilizat -->
+                <p><strong>Descriere:</strong> @user.Profile?.Description</p>
+                @if (!string.IsNullOrEmpty(user.Profile?.ImagePath))
+                {
+                    <img src="@user.Profile.ImagePath" alt="Imagine Profil" class="img-thumbnail rounded-circle" style="max-width: 150px; height: auto;" /> <!-- Imagine profil rotundă -->
+                }
+                <a class="btn btn-danger mt-2" asp-action="Show" asp-route-id="@user.Id">Vezi Profil</a> <!-- Buton stilizat -->
+            </div>
+        </div>
+    }
+}
+else
+{
+    <p class="text-center text-muted font-italic">Nu s-au găsit utilizatori care să corespundă căutării.</p> <!-- Mesaj de eroare stilizat -->
+}

@@ -1,0 +1,105 @@
+﻿/* Fundal general al paginii */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+}
+
+/* Navbar stilizat */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+    .navbar-links a:hover {
+        text-decoration: underline;
+    }
+
+/* Secțiunea principală */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Container pentru formular */
+.form-container {
+    background: rgba(255, 255, 255, 0.2); /* Fundal semi-transparent */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    color: white;
+    margin-bottom : 100px;
+}
+
+/* Stiluri pentru titluri */
+h1 {
+    font-size: 3.5rem; /* Dimensiune mai mare */
+    font-family: 'Dancing Script', cursive; /* Font caligrafic */
+    margin-top: 10px;
+    color: white; /* Asigură-te că se potrivește cu fundalul */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Umbră pentru contrast */
+    text-align:center;
+}
+h2{
+    font-size: 1.5rem; /* Dimensiune mai mare */
+    font-family: 'Dancing Script', cursive; /* Font caligrafic */
+    margin-top: 10px;
+    color: white; /* Asigură-te că se potrivește cu fundalul */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Umbră pentru contrast */
+}
+
+/* Stiluri pentru input-uri */
+.form-floating .form-control {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.form-floating label {
+    color: #666;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    background-color : transparent;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 20px;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+}

@@ -1,0 +1,13 @@
+﻿@model string
+
+<h2 class="text-center">Trimite cerere de prietenie</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="friendId">ID-ul prietenului</label>
+        <input type="text" id="friendId" name="friendId" class="form-control" value="@Model" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Trimite cererea de prietenie</button>
+</form>
+
+<a class="btn btn-secondary" asp-action="Index">Înapoi la lista de prieteni</a>
