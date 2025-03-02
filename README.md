@@ -1,4 +1,4 @@
-# AMORIA - Micro - Social - Platform
+# AMORIA -> Micro-Social Platform
 
 ## Descriere
 Amoria este o platformă de tip micro-rețea socială, dezvoltată în C# și ASP.NET Core, care oferă utilizatorilor posibilitatea de a interacționa, de a crea conexiuni și de a partaja conținut într-un mediu sigur și intuitiv. Inspirată de cele mai populare rețele sociale, Amoria pune un accent deosebit pe controlul vizibilității profilurilor, gestionarea interacțiunilor (postări, comentarii) și crearea grupurilor private.
