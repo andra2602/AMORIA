@@ -1,3 +1,101 @@
+### AMORIA -> Micro-Social Platform  
+
+## Description  
+Amoria is a **micro-social network platform**, developed in **C# and ASP.NET Core**, allowing users to interact, connect, and share content in a **secure and intuitive environment**. Inspired by the most popular social networks, Amoria focuses on **profile visibility control**, **interaction management (posts, comments)**, and **private group creation**.  
+
+This project is the result of a **collaborative effort** within the **Web Application Development** course. The team worked efficiently using **Trello** for task management and communication tools such as **Google Meet, Discord, and WhatsApp**, ensuring **constant and well-coordinated collaboration**.  
+
+---
+
+## Implemented Features  
+
+### **User Management**  
+- **Unregistered visitor**  
+- **Registered user**  
+- **Administrator** (full control over platform content)  
+- Create and edit personal profiles (name, description, profile picture, public/private visibility)  
+- Search for users by full name or partial name  
+- View private profiles with limited information (name, description, profile picture)  
+- Friend request system (follow feature) based on profile visibility  
+
+### **Posts & Interactions**  
+- Create, edit, and delete posts (text, images, embedded videos)  
+- Comments on posts, editable and deletable only by the owner  
+- Administrators can remove inappropriate content  
+
+### **Groups & Communication**  
+- Create and manage groups (name, description, moderator)  
+- Join groups only with an active account and approval from a moderator  
+- Private messages within groups, editable only by the author  
+- Ability to leave groups or be removed by the moderator  
+
+---
+
+## **Technologies Used**  
+- **C# & ASP.NET Core** - Robust and scalable backend  
+- **Entity Framework Core** - Database management  
+- **SQL Server** - User data storage  
+- **Bootstrap & CSS** - Modern and responsive UI  
+- **JavaScript & jQuery** - Dynamic frontend functionalities  
+
+---
+
+## **Methodology & Organization**  
+- **Sprint-based planning**: Each stage was structured into **weekly sprints** with clear goals:  
+  - **Week 1** – ER Diagram, requirement clarification, environment setup  
+  - **Weeks 2-3** – Developing models and controllers  
+  - **Weeks 4-5** – Implementing UI and testing  
+- **Trello for task organization**: Progress was tracked, and tasks were distributed fairly.  
+- **Effective communication via Google Meet, Discord, and WhatsApp**: The team stayed in sync, addressing challenges and solutions in real time.  
+- **Branding & Identity**: A custom logo was designed for Amoria, adding a professional touch to the project.  
+
+---
+
+## **Challenges & Solutions**  
+- **Technical issues with Docker**: Initially, we attempted to use **Docker**, but encountered configuration difficulties. We reverted to a traditional approach for efficiency.  
+- **Implementing group and user relationship management**: Required an iterative approach, refining the code based on testing and feedback.  
+- **Database optimization and model relationships**: We applied **efficient indexing and relationship management** techniques to enhance performance.  
+
+---
+
+## **How to Run the Project**  
+
+1️⃣ **Clone the repository**:  
+```bash
+git clone https://github.com/your-username/Amoria.git
+```  
+2️⃣ **Navigate to the project folder**:  
+```bash
+cd Amoria
+```  
+3️⃣ **Install dependencies and run the server**:  
+```bash
+dotnet restore
+dotnet run
+```  
+4️⃣ **Access the application in your browser**:  
+```bash
+http://localhost:5000
+```  
+
+---
+
+## 🎓 **Learning Experience & Conclusions**  
+This project was an **invaluable learning experience**, going beyond a simple academic requirement. It enabled us to:  
+
+✔️ **Collaborate effectively in a diverse and well-coordinated team**  
+✔️ **Master a high-performance backend framework (ASP.NET Core)**  
+✔️ **Manage relational databases efficiently using Entity Framework Core**  
+✔️ **Apply MVC (Model-View-Controller) principles for an organized application structure**  
+
+📌 **All planned functionalities were successfully implemented**, and technical challenges were overcome through **innovative approaches and pragmatic solutions**. We gained insights into the complexity of **software development** and learned how to navigate it with **professionalism and perseverance**.  
+
+🔹 **Looking ahead**, Amoria is just the beginning of a promising journey, with **unlimited potential for expansion and refinement**. This project represents an essential step in our **quest to create innovative and impactful platforms**! 🚀  
+
+
+
+___
+
 # AMORIA -> Micro-Social Platform
 
 ## Descriere
