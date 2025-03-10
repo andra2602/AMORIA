@@ -1,4 +1,4 @@
-### AMORIA -> Micro-Social Platform  
+# AMORIA -> Micro-Social Platform  
 
 ## Description  
 Amoria is a **micro-social network platform**, developed in **C# and ASP.NET Core**, allowing users to interact, connect, and share content in a **secure and intuitive environment**. Inspired by the most popular social networks, Amoria focuses on **profile visibility control**, **interaction management (posts, comments)**, and **private group creation**.  
